@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ol, li, ul{
+    list-style: none;
+}
+:root{
+    --orange: #FB5D2E;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 90px 1fr;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    background-color: #ffffff;
+}
+.logo img{
+    width: 100px;
+}
+.info__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.info__menu>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+}
+.tel{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+}
+.tel img{
+    width: 40px;
+}
+.first__button{
+    border: none;
+}
+.first__button a{
+    display: flex;
+    width: 125px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-color: var(--orange);
+    border-style: solid;
+    font-size: 1rem;
+}
+main{
+    height: 100%;
+    display: grid;
+    place-items: end start;
+    grid-template-areas: 
+    "f2 f3 f3 f4 f4"
+    "f5 f5 f6 f6 f6"
+    ;
+    position: relative;
+}
+.linha{
+    height: 1px;
+    width: 100%;
+}
+.big{
+    position: absolute;
+    right: 20%;
+    bottom: 34%;
+    z-index: -1;
+}
+.big img{
+    width: 350px;
+    height: 400px;
+}
+.pass{
+    grid-area: f2;
+}
+.info{
+    font-size: 3rem;
+    font-weight: bold;
+    place-self: center end;
+    grid-area: f2;
+}
+.info .oran{
+    color: var(--orange);
+}
+.tres{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    grid-area: f6;
+    place-self: end end;
+}
+.tres img{
+    width: 250px;
+    height: 150px;
+}
