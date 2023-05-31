@@ -36,6 +36,7 @@ header{
     display: flex;
     flex-direction: row;
     gap: 60px;
+    font-size: 1.20rem;
 }
 .info__menu>:nth-child(2){
     color: var(--orange);
@@ -81,21 +82,24 @@ main{
 }
 .big{
     position: absolute;
-    right: 20%;
-    bottom: 34%;
+    right: 30%;
+    bottom: 24%;
     z-index: -1;
 }
 .big img{
-    width: 350px;
-    height: 400px;
+    width: 400px;
+    height: 450px;
 }
 .pass{
     grid-area: f2;
+    margin-left: 56px;
 }
 .info{
-    font-size: 3rem;
+    width: 400px;
+    font-size: 3.5rem;
     font-weight: bold;
-    place-self: center end;
+    place-self: end;
+    margin-left: 300px;
     grid-area: f2;
 }
 .info .oran{
@@ -111,4 +115,24 @@ main{
 .tres img{
     width: 250px;
     height: 150px;
+}
+.now{
+    grid-area: f5;
+    place-self: center;
+
+}
+.now img{
+    width: 150px;
+    height: 56px;
+}
+.extra__info p{
+    width: 100px;
+}
+.extra__info{
+    display: flex;
+    flex-direction: row;
+    grid-area: f5;
+    place-self: end center;
+    margin-bottom: 32px;
+    gap: 24px;
 }
