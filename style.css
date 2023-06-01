@@ -28,6 +28,7 @@ header{
     justify-content: center;
     gap: 180px;
     background-color: #ffffff;
+    position: fixed;
 }
 .logo img{
     width: 100px;
@@ -135,4 +136,167 @@ main{
     place-self: end center;
     margin-bottom: 32px;
     gap: 24px;
+}
+.extra__info .pri{
+    display: flex;
+    flex-direction: row;
+}
+.extra__info .seg{
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: grid;
+        grid-template-rows: 100px 1fr 50px;
+        background-image: url(./img/background-ipad.svg);
+        background-size: 768px 1024px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: fixed;
+    }
+    header{
+        width: 768px;
+        height: 80px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .logo{
+        position: absolute;
+        left: 8vw;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .tel{
+        position: absolute;
+        right: 32vw;
+    }
+    .tel img{
+        width: 50px;
+    }
+    .tres .link__main{
+        position: absolute;
+        right: 10px;
+        top: 64vh;
+    }
+    .big{
+        position: absolute;
+        top: 12vh;
+        right: 10vw;
+    }
+    .info{
+        position: absolute;
+        left: -32vw;
+        top: 24vh;
+    }
+    .extra__info{
+        display: grid;
+        position: absolute;
+        left: 8vw;
+        top: 60vh;
+    }
+    .now{
+        position: absolute;
+        top: 80vh;
+        left: 40vw;
+    }
+    .now img{
+        width: 200px;
+        height: 85px;
+    }
+    .link{
+        display: none;
+    }
+    .pass{
+        display: none;
+    }
+    .first__button{
+        display: none;
+    }
+    .tel p{
+        display: none;
+    }
+    .info__menu{
+        display: none;
+    }
+@media(max-width: 320px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: grid;
+        grid-template-rows: 50px 1fr 25px;
+        background-image: url(./img/bakcground-se.svg);
+        background-size: 320px 568px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: fixed;
+    }
+    header{
+        width: 320px;
+        height: 50px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .logo img{
+        width: 70px;
+    }
+    .tel{
+        position: absolute;
+        right: 12vw;
+    }
+    .tel img{
+        width: 30px;
+    }
+    .info{
+        font-size: 2rem;
+        position: absolute;
+        top: 20vh;
+        left: -88vw;
+    }
+    .tres .link__main{
+        position: absolute;
+        top: 40vh;
+    }
+    .link__main img{
+        width: 170px;
+        height: 110px;
+    }
+    .now{
+        position: absolute;
+        left: 24vw;
+    }
+    .now img{
+        width: 150px;
+        height: 60px;
+    }
+    .extra__info{
+        display: flex;
+        gap: 2px;
+        position: absolute;
+        top: 72vh
+    }
+    .big{
+        display: none;
+    }
+
+
+}
+
 }
